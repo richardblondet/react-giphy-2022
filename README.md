@@ -7,18 +7,16 @@ Gifinder is a simple react application prototype for finding GIFS. Because this 
 
 ## Getting Started
 
-To run this application please follow these instructions.
-
 ### Installing
 
 Run the following commands to start the app in development mode. Please check the package.json script for further modes.
 
-First clone this repo and enter to the app directory:
+Clone this repo:
 ```sh
 $ git clone git@github.com:richardblondet/react-giphy-2022.git react-giphy-2022 && cd react-giphy-2022
 
 ```
-Then install all dependencies and start the app:
+Install and start:
 ```sh
 npm install && npm start
 ```
