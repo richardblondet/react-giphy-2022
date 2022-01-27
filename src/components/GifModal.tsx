@@ -53,7 +53,7 @@ export default function GifModal({
               <Avatar sx={{ bgcolor: '#333' }} aria-label="username">
                 <FiUser />
               </Avatar>
-            ) : undefined}
+            ) : null}
             title={gif.username}
             subheader={gif.import_datetime}
           />

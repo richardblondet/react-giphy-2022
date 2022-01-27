@@ -35,18 +35,18 @@ export default function GifsList({ gifs, source }: GifsListsProps) {
       </Typography>
       <Box sx={{ width: '100%', marginBottom: '3em' }}>
         <ImageList variant="masonry" cols={3} gap={8}>
-          {gifs.map((item: any) => (
-            <ImageListItem key={item.id} onClick={() => handleModalOpen(item)}>
+          {gifs.map((gifItem: any) => (
+            <ImageListItem key={gifItem.id} onClick={() => handleModalOpen(gifItem)}>
               <img
-                src={`${item.images.original_still.url}`}
-                alt={item.title}
+                src={gifItem.images.original_still.url}
+                alt={gifItem.title}
                 loading="lazy"
               />
             </ImageListItem>
           ))}
         </ImageList>
       </Box>
-      {gif && (
+      {gif ? (
         <GifModal
           gif={gif}
           open={open}
@@ -54,7 +54,7 @@ export default function GifsList({ gifs, source }: GifsListsProps) {
           handleOpenGif={handleOpenGif}
           handleCopyUrl={handleCopyUrl}
         />
-      )}
+      ) : null }
     </>
   );
 }

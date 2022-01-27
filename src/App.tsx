@@ -61,7 +61,11 @@ export default function App() {
             setSearchText('');
             loadTrendingGifs();
           }}
-          onSearchClick={() => searchText && queryGifs(searchText)}
+          onSearchClick={() => {
+            if (searchText) {
+              queryGifs(searchText);
+            }
+          }}
         />
         { loading ? <Loading /> : <GifsList gifs={gifs} source={showingText} /> }
       </Box>
