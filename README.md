@@ -21,6 +21,8 @@ Install and start:
 npm install && npm start
 ```
 
+Verify app running at `http://localhost:3000/`
+
 Testing:
 ```sh
 npm run test
@@ -31,7 +33,6 @@ Lint:
 npm run lint
 ```
 
-Verify app running at `http://localhost:3000/`
 
 ## Built With
 
